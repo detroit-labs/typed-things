@@ -1,0 +1,13 @@
+*.js
+*.txt
+*.map
+*.swp
+.DS_Store
+npm-debug.log
+.idea
+*.iml
+*.js.map
+!*.js/
+node_modules
+.sublimets
+.settings/launch.json
