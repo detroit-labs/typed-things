@@ -15,5 +15,5 @@ declare module "react-cookie" {
     httpOnly?: boolean;
   }
 
-  export default class ReactCookie;
+  export default class ReactCookie {}
 }
