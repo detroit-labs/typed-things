@@ -1,6 +1,6 @@
 declare module "react-cookie" {
 
-  function load(name: string, doNotParse: boolean): void;
+  function load(name: string, doNotParse: boolean): any;
 
   function save(name: string, value: any, opt?: CookieOptions): void;
 
