@@ -1,26 +1,29 @@
+import {QueryConfig} from "pg";
 
-declare class SQLStatement {
+declare class SQLStatement implements QueryConfig {
+    private strings: string[]
 
-  private strings: string[]
+    /** The constructor used by the tag */
+    constructor(strings: string[], values: any[]);
 
-  /** The SQL Statement for node-postgres */
-  text: string
+    /** The SQL Statement for node-postgres */
+    text: string;
 
-  /** The SQL Statement for mysql */
-  sql: string
+    /** The SQL Statement for mysql */
+    sql: string;
 
-  /** The values to be inserted for the placeholders */
-  values: any[]
+    /** The values to be inserted for the placeholders */
+    values: any[];
 
-  /** The name for postgres prepared statements, if set */
-  name: string
+    /** The name for postgres prepared statements, if set */
+    name: string;
 
-  /** Appends a string or another statement */
-  append(statement: SQLStatement|string|number): this
+    /** Appends a string or another statement */
+    append(statement: SQLStatement | string | number): this;
 
-  /** Sets the name property of this statement for prepared statements in postgres */
-  setName(name: string): this
+    /** Sets the name property of this statement for prepared statements in postgres */
+    setName(name: string): this;
 }
 
 /** Template string tag */
-export default function SQL(strings: string[], values: any[]): SQLStatement
+export default function SQL(strings: string[], values: any[]): SQLStatement;
