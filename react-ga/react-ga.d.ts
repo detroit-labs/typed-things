@@ -13,7 +13,7 @@ declare namespace __reactGA {
     }
 
     export interface gaOptions {
-        userId?: number;
+        userId?: string;
         cookieDomain?: string;
     }
 
