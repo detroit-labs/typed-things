@@ -4,8 +4,7 @@
 // Definitions: https://github.com/DefinitelyTyped/DefinitelyTyped
 // TypeScript Version: 2.1
 
-/// <reference types="react" />
-/// <reference types="react-addons-linked-state-mixin" />
+///<reference path='../react/index.d.ts' />
 
 declare module "material-ui" {
     export import AppBar = __MaterialUI.AppBar;
