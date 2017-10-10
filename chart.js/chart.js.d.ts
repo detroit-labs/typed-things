@@ -524,4 +524,4 @@ declare namespace Chart {
 }
 
 export = Chart;
-//export as namespace Chart;
+export as namespace Chart;
