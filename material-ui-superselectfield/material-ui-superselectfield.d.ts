@@ -39,6 +39,7 @@ declare module "material-ui-superselectfield" {
         underlineFocusStyle?: Object;
         autocompleteUnderlineStyle?: Object;
         autocompleteUnderlineFocusStyle?: Object;
+        clearAutocompleteUponSelection?: boolean;
     }
 
     export default class SuperSelectField extends React.Component<IMaterialUISuperSelectFieldProps, any> {}
