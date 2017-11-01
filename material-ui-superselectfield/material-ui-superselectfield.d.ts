@@ -11,7 +11,7 @@ declare module "material-ui-superselectfield" {
         checkPosition?: string;
         hintText?: string;
         nb2show?: number;
-        elementHeight?: number;
+        elementHeight?: number | number[];
         style?: Object;
         innerDivStyle?: Object;
         selectedMenuItemStyle?: Object;
