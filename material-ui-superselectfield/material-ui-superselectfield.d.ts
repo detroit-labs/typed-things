@@ -7,6 +7,13 @@ declare module "material-ui-superselectfield" {
         multiple?: boolean;
         key?: string;
         onChange?: (...args: any[]) => void;
+        onSelect?: (...args: any[]) => void;
+        onMenuOpen?: (...args: any[]) => void;
+        openImmediately?: boolean;
+        errorText?: any;
+        errorTextStyle?: Object;
+        underlineErrorStyle?: Object;
+        noMatchFoundStyle?: Object;
         selectionsRenderer?: (...args: any[]) => void;
         checkPosition?: string;
         hintText?: string;
@@ -30,7 +37,7 @@ declare module "material-ui-superselectfield" {
         menuStyle?: Object;
         menuGroupStyle?: Object;
         menuFooterStyle?: Object;
-        menuCloseButton?: any;
+        footerActionsRenderer?: any;
         checkedIcon?: any;
         unCheckedIcon?: any;
         floatingLabelStyle?: Object;
